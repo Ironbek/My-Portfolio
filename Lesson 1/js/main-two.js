@@ -34,10 +34,7 @@ var sym = Symbol();
 
 // var answer = +prompt("Вам есть 18?", "18"); /*+ здесь преообразует строку в число*/
 
-
-
-	
-		var height = prompt("Веди высоту");
+/*		var height = prompt("Веди высоту");
 
 		if (height < 23){
 
@@ -46,9 +43,41 @@ var sym = Symbol();
 		console.log();
 	}
 }
-	
-	
+	*/
 
 
+//(1 == 1) ? console.log('True') : console.log('False');
 
+let num = 50;
+
+switch (num) {
+
+	case 49:
+		console.log("Down");
+		break;
+	case 56:
+		console.log("Wow!");
+		break;
+	case 33:
+		console.log("Down-down");
+		break;
 	
+	default:
+		console.log("Not today");
+		break; 
+}	
+
+/*while (num < 55){
+
+	console.log(num);
+	num++;
+}
+*/
+
+/*do {
+
+	console.log(num);
+	num++;
+}
+while (num < 55);
+*/
