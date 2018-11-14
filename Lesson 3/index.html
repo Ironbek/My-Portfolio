@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 3</title>
+</head>
+<body>
+	<style>
+	.video{
+
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	.overlay{
+			
+		position: absolute;
+		top: 0;
+	 	right: 0;
+	 	left: 0;
+	 	bottom: 0;
+	 	z-index: 1;
+		background: rgba(0,0,0, 0.50);
+	}
+	.h1{
+
+		position: absolute;
+		top: 35%;
+		left: 12%;
+		z-index: 11;
+		color: #fff;
+		font-size: 65px;
+		text-transform: uppercase;
+		background: rgba(0,0,0,  0.35);
+		padding: 15px;
+	}
+
+	</style>
+
+		<div id="trailer" class="video">
+			<div class="overlay">
+			</div>
+				<div class="class">
+					<h1 class="h1">Hello it's my first programm in JS</h1>
+				</div>
+			<video width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" muted="muted">
+				<source src="source/1.mp4">
+			</video> 
+		</div>
+	
+
+	<script src="js/main.js"></script>
+</body>
+</html>

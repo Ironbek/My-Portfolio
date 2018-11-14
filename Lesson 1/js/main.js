@@ -1,45 +1,75 @@
-let money = prompt('Ваш бюджет :');
-let name = prompt('Название вашего магазина :');
-let time = 19;
+/*
+let str = 'урок-3-был слишком легким';
+console.log(str[0].toUpperCase() + str.slice(1));
 
-mainList = {
+console.log(str[6] = ' ');
 
-    budget : money,
-    storename : name,
-    shopGoods : [],
-    employers : {},
-    open : false
-};
 
-for (let i = 0; i < 5; i++){
+let options = {
 
-    let a = prompt('Какой тип товара будем продовать ?');
-
-    if ((typeof(a)) === 'string' && (typeof(a)) === null && a != '' && a.length < 50){
-
-        console.log('Все верно!');
-        mainList.shopGoods[i] = a;
-
-    } else {
-
-        mainList.shopGoods[i] = a;
-
-    }
+  name: 'test',
+  width : 1024,
+  height : 1024
 }
-  
-  
 
-if (time < 0){
-  console.log('Такого не может быть');
-} else if(time > 8 && time < 20 ){
-  console.log('Время работать!')
-  } else if(time < 24) {
-      console.log('Уже слишком поздно');
-      } else {
-         console.log('В сутках только 24 часа');
-      };
+options.bool = false;
+options.colors = {
+    border: 'black',
+    background: 'red'
+}
 
-alert(mainList.budget / 30);
+delete options.bool;
+
+for ( let key in options) {
+    console.log('Свойство ' + key + ' имеет значение ' + options[key]);
+}
+
+console.log(options);
+console.log(Object.keys(options).length);
+
+console.log(first.pop()); // Удаление последнего элемента в массиве
+
+first.push(6); // Добавление нового элемента в конец массива
+
+first.shift(); // Удалает первый элемент в массиве
+first.unshift(); // Добавляет в начало массива элемент*/
 
 
-console.log(mainList);
+let first = [5,52,6,22,9];
+
+let i = prompt('', '');
+
+function sortNumbers(a,b) {
+    
+    return a - b;
+}
+
+/*let i = first.sort(sortNumbers); */  //split() Записывает веденые пользовотелем данные в массив 
+
+console.log(i);
+
+/*
+for (var i = 0; i < first.length; i++) {
+    
+    alert(first[i]);
+}
+*/
+first.forEach(function( item,i,arr ){
+    console.log( i + ": " + item + ' массив: ' + arr + ")" );
+
+});
+
+
+/*let solider = {
+    health: 400,
+    armor: 100
+}
+
+let john = {    
+    health: 100
+}
+
+john.__proto__ = solider;
+
+console.log(john);
+console.log(john.armor);*/
